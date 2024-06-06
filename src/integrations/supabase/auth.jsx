@@ -8,11 +8,9 @@ const SupabaseAuthContext = createContext();
 
 export const SupabaseAuthProvider = ({ children }) => {
   return (
-    <SupabaseProvider>
-      <SupabaseAuthProviderInner>
-        {children}
-      </SupabaseAuthProviderInner>
-    </SupabaseProvider>
+    <SupabaseAuthProviderInner>
+      {children}
+    </SupabaseAuthProviderInner>
   );
 }
 
